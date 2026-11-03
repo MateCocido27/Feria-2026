@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@600;700;800&display=swap');
+
+:root {
+  --navy: #1c2b50;
+  --navy-soft: #34466d;
+  --cream: #fff8df;
+  --paper: #fffdf5;
+  --yellow: #f6d978;
+  --teal: #79c9bd;
+  --coral: #f29a83;
+  --ink: #27314b;
+  --muted: #65708a;
+  --shadow: 0 12px 32px rgba(28, 43, 80, .10);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--ink); background: #fffdf7;
+  font-family: 'Nunito', system-ui, sans-serif; line-height: 1.55;
+}
+.site-header { background: var(--navy); color: white; }
+.header-inner {
+  width: min(1120px, calc(100% - 36px)); margin: auto; min-height: 88px;
+  display: flex; align-items: center; gap: 15px;
+}
+.school-logo { width: 66px; height: 66px; border-radius: 50%; object-fit: contain; background: white; }
+.school-name { display: flex; flex-direction: column; font-weight: 900; letter-spacing: .2px; }
+.edition { color: #e9dcae; font-size: .83rem; font-weight: 700; }
+.book-icon { margin-left: auto; font-size: 2rem; }
+main { overflow: hidden; }
+.hero {
+  position: relative; padding: 70px max(24px, calc((100% - 1050px)/2)) 76px;
+  background: var(--cream); isolation: isolate;
+}
+.hero:after {
+  content: ""; position: absolute; z-index: -1; width: 390px; height: 390px;
+  right: -90px; top: -155px; border-radius: 50%; background: #f8e9ae; opacity: .8;
+}
+.hero-copy { max-width: 700px; }
+.eyebrow, .section-kicker { color: #8b6b21; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; font-size: .76rem; }
+h1, h2, h3 { font-family: 'Baloo 2', 'Nunito', sans-serif; line-height: 1.08; margin: 8px 0 14px; }
+h1 { color: var(--navy); font-size: clamp(3.3rem, 8vw, 5.7rem); }
+h1 span { color: #d18a54; }
+.hero p { max-width: 560px; font-size: 1.15rem; color: #4f5870; margin: 0 0 25px; }
+.jump-link {
+  display: inline-flex; gap: 10px; align-items: center; background: var(--navy); color: white;
+  text-decoration: none; padding: 12px 20px; border-radius: 999px; font-weight: 900;
+  box-shadow: 0 6px 0 #101b36; transition: transform .15s;
+}
+.jump-link:hover { transform: translateY(-2px); }
+.hero-decoration { position: absolute; right: 13%; bottom: 20px; color: #d5a63c; font-size: 2rem; }
+.hero-decoration span:nth-child(2) { color: var(--coral); font-size: 2.5rem; }
+.hero-decoration span:nth-child(3) { color: #58a99e; }
+section:not(.hero) { width: min(1050px, calc(100% - 36px)); margin: 64px auto; }
+.section-heading { margin-bottom: 23px; }
+.section-heading h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--navy); }
+.section-intro { color: var(--muted); margin-top: -5px; }
+.story-card {
+  display: grid; grid-template-columns: minmax(190px, 290px) 1fr; gap: 30px; align-items: center;
+  padding: 22px; border-radius: 25px; background: #f8f0d6; box-shadow: var(--shadow);
+}
+.book-cover { display: block; width: 100%; max-height: 370px; object-fit: contain; border-radius: 12px; box-shadow: 0 8px 22px #6d593333; }
+.story-text h3 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); color: var(--navy); margin-top: 14px; }
+.story-text p { max-width: 540px; }
+.pill { display: inline-block; background: #d8eee7; color: #27665e; padding: 6px 13px; border-radius: 999px; font-weight: 900; font-size: .82rem; }
+.author { font-weight: 900; color: #986b37; }
+.photo-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+.photo-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow); }
+.empty-note { grid-column: 1 / -1; padding: 25px; text-align: center; background: #eef7f3; border: 2px dashed #a8d5ca; border-radius: 18px; color: #496b67; font-weight: 800; }
+.readings-section { background: #f4f6fb; padding: 36px; border-radius: 28px; }
+.reading-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.reading-card {
+  background: white; border: 1px solid #e6eaf2; border-radius: 18px; padding: 17px;
+  box-shadow: 0 5px 15px rgba(28,43,80,.05);
+}
+.reading-top { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
+.reading-number {
+  flex: 0 0 42px; height: 42px; display: grid; place-items: center; border-radius: 14px;
+  background: #fff0bd; color: #77581a; font-weight: 900;
+}
+.reading-card h3 { font-size: 1.13rem; color: var(--navy); margin: 0; }
+.reading-card audio { display: block; width: 100%; height: 40px; }
+.audio-missing { color: #7b8499; font-size: .88rem; background: #f4f6fb; border-radius: 10px; padding: 9px; }
+.privacy-note { margin: 24px 0 0; color: var(--muted); font-size: .86rem; }
+footer {
+  background: var(--navy); color: white; padding: 27px 18px; display: flex; align-items: center;
+  justify-content: center; gap: 16px; text-align: left;
+}
+.footer-logo { width: 54px; height: 54px; object-fit: contain; background: white; border-radius: 50%; }
+footer p { margin: 0; font-size: .9rem; }
+.footer-stars { color: #f6d978; margin-left: 15px; }
+@media (max-width: 620px) {
+  .header-inner { min-height: 76px; }
+  .school-logo { width: 54px; height: 54px; }
+  .school-name { font-size: .88rem; }
+  .book-icon { font-size: 1.5rem; }
+  .hero { padding-top: 54px; padding-bottom: 65px; }
+  .hero-decoration { right: 8%; opacity: .6; }
+  section:not(.hero) { margin: 45px auto; }
+  .story-card { grid-template-columns: 1fr; gap: 20px; }
+  .book-cover { max-height: 420px; }
+  .readings-section { padding: 22px 15px; }
+  footer { flex-wrap: wrap; text-align: center; }
+  .footer-stars { display: none; }
+}

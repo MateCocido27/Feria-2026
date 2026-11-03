@@ -1,0 +1,35 @@
+FERIA 2026 — SITIO WEB
+
+Archivos:
+- index.html: página principal.
+- styles.css: diseño y colores.
+- content.js: aquí se agregan las fotos y los enlaces a los 28 audios.
+- app.js: genera las tarjetas y los reproductores.
+- assets/: logo de la escuela y portada del cuento.
+
+PARA PROBAR:
+1. Descomprimí la carpeta.
+2. Abrí index.html en un navegador. (Para una prueba local, algunos navegadores pueden limitar archivos remotos; la versión publicada funcionará desde el alojamiento web.)
+
+PARA AGREGAR FOTOS:
+En content.js, dentro de photos, agregá objetos así:
+{ src: "URL_DIRECTA_DE_LA_IMAGEN", alt: "Foto de la actividad" }
+
+PARA AGREGAR AUDIOS:
+En content.js, Los 28 audios ya están cargados en content.js, en el orden que compartiste. Están enlazados como archivos OGG de Drive.
+audio: "https://drive.google.com/uc?export=download&id=ID_DEL_ARCHIVO"
+
+En Google Drive:
+1. Abrí el archivo.
+2. Compartir > Acceso general > Cualquier persona que tenga el enlace > Lector.
+3. Copiá el ID del archivo desde el enlace compartido.
+4. Pegalo en la URL indicada arriba.
+
+IMPORTANTE:
+- Hacé una prueba de reproducción con Android y iPhone antes de la feria.
+- Drive puede limitar o cambiar la entrega de archivos; para un evento con muchas visitas simultáneas, conviene alojar los OGG en un servicio de archivos estáticos/CDN.
+- No publiques nombres completos ni datos personales de menores. Obtené las autorizaciones correspondientes para compartir voces e imágenes.
+- El QR se genera recién cuando la página esté publicada y tenga su dirección definitiva.
+
+PRUEBA DE LOS AUDIOS:
+Los enlaces se configuraron con los 28 ID que compartiste. No pude verificar desde aquí los permisos ni reproducir cada archivo. Antes de la feria, publicá una versión de prueba y comprobá los audios desde un celular sin iniciar sesión en Google.
