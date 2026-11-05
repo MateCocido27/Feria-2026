@@ -96,6 +96,8 @@ section:not(.hero) { width: min(1050px, calc(100% - 36px)); margin: 64px auto; }
 .photo-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
 .photo-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 18px; box-shadow: var(--shadow); }
 .empty-note { grid-column: 1 / -1; padding: 25px; text-align: center; background: #eef7f3; border: 2px dashed #a8d5ca; border-radius: 18px; color: #496b67; font-weight: 800; }
+.photo-card { margin: 0; padding: 12px; border-radius: 25px; background: #f8f0d6; box-shadow: var(--shadow); }
+.photo-card img { display: block; border-radius: 14px; box-shadow: none; }
 .readings-section { background: #f4f6fb; padding: 36px; border-radius: 28px; }
 .reading-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
 .reading-card {
